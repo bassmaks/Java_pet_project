@@ -4,7 +4,7 @@
     <title>MYSHOP</title>
 </head>
 <body>
-<h1>MYSHOP</h1><hr>
+<h1>MYSHOP | <a href="/login">Войти</a></h1><hr>
 <h4>Товары на продажу</h4>
 <form action="/" method="get">
     Поиск по названию обьявления: <input type="text" name="title"><br>
@@ -14,7 +14,7 @@
     <div>
         <p><b>${product.title}</b> ${product.price} руб. | <a href="/product/${product.id}">Подробнее...</a></p>
     </div>
-    <#else>
+<#else>
     <h3>Товаров нет</h3>
 </#list>
 <hr>
